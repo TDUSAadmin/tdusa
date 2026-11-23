@@ -1,0 +1,17 @@
+{
+  "title": "About TDUSA",
+  "facts": [
+    "The Trincomalee District University Students Association (TDUSA) is described by its website as a non-profit public organisation run by university undergraduates from Trincomalee.",
+    "Its website describes education, mentoring and community service as areas of work.",
+    "Tagline: Studies Determine Future."
+  ],
+  "links": [
+    {
+      "label": "Official website, provided by TDUSA",
+      "url": "https://tdusasl.com/"
+    }
+  ],
+  "source": "https://tdusa.netlify.app/",
+  "last_updated": "2026-11-22",
+  "status": "reviewed_public_site"
+}

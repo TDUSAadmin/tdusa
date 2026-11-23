@@ -1,0 +1,16 @@
+{
+  "title": "Official contact",
+  "facts": [
+    "Email: tdusasl@gmail.com.",
+    "Address: Town Hall Premises, Dockyard Road, Trincomalee, Sri Lanka."
+  ],
+  "links": [
+    {
+      "label": "Contact TDUSA",
+      "url": "mailto:tdusasl@gmail.com"
+    }
+  ],
+  "source": "https://tdusa.netlify.app/",
+  "last_updated": "2026-11-22",
+  "status": "reviewed_public_site"
+}

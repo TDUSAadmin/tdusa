@@ -1,0 +1,9 @@
+{
+  "title": "Examination results",
+  "facts": [
+    "The current website has a results portal. The chat interface provides a link to it. Exam publication and availability are not confirmed by this knowledge file. Never request access codes, passwords, OTPs or index numbers in chat."
+  ],
+  "source": "https://tdusa.netlify.app/",
+  "last_updated": "2026-11-22",
+  "status": "reviewed_public_site"
+}

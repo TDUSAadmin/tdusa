@@ -1,0 +1,15 @@
+{
+  "title": "University guidance",
+  "facts": [
+    "General information may be provided as general guidance, not as an official admission decision. Direct users to the relevant government university admission authority or university for current requirements and deadlines. No specific policies, dates or eligibility are confirmed in this knowledge file."
+  ],
+  "links": [
+    {
+      "label": "University Grants Commission of Sri Lanka",
+      "url": "https://www.ugc.ac.lk/"
+    }
+  ],
+  "source": "https://tdusa.netlify.app/",
+  "last_updated": "2026-11-22",
+  "status": "reviewed_public_site"
+}

@@ -1,0 +1,81 @@
+{
+  "title": "Committee",
+  "facts": [
+    "The public website has a 2026 committee listing; it is labelled by year and is not proof of who currently serves. Current published committee data is loaded separately when available."
+  ],
+  "source": "https://tdusa.netlify.app/",
+  "last_updated": "2026-11-22",
+  "status": "reviewed_public_site",
+  "website_2026_listing": [
+    {
+      "name": "J. Ratheeshan",
+      "position": "President",
+      "institution": "UOP"
+    },
+    {
+      "name": "R. Nipunraj",
+      "position": "Vice President",
+      "institution": "EUSL"
+    },
+    {
+      "name": "V. Abishake",
+      "position": "Treasurer",
+      "institution": "UOJ"
+    },
+    {
+      "name": "R. Shathurshmah",
+      "position": "Secretary",
+      "institution": "UOJ"
+    },
+    {
+      "name": "T. Sathusan",
+      "position": "Joint Secretary",
+      "institution": "UOV"
+    },
+    {
+      "name": "S. Haranee",
+      "position": "Editor",
+      "institution": "UOJ"
+    },
+    {
+      "name": "S. Ramsaran",
+      "position": "Editor",
+      "institution": "UOJ"
+    },
+    {
+      "name": "R. Rishivan",
+      "position": "Member",
+      "institution": "UOP"
+    },
+    {
+      "name": "S. Shakeeban",
+      "position": "Member",
+      "institution": "UOV"
+    },
+    {
+      "name": "J. Sanjai",
+      "position": "Member",
+      "institution": "UOJ"
+    },
+    {
+      "name": "C. Darshan",
+      "position": "Member",
+      "institution": "UOP"
+    },
+    {
+      "name": "M. Monika",
+      "position": "Member",
+      "institution": "USJP"
+    },
+    {
+      "name": "R. Soorya",
+      "position": "Mutur West",
+      "institution": "UOJ"
+    },
+    {
+      "name": "M. Abhivarun",
+      "position": "Mutur East",
+      "institution": "UOJ"
+    }
+  ]
+}

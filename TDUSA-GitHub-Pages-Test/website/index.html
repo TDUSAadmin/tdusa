@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="TDUSA - Trincomalee District University Students Association" name="description"/>
+  <title>
+   TDUSA - Studies Determine Future
+  </title>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <!-- display=swap: page text renders immediately, fonts swap in when ready -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+  <script>
+   // Hide the welcome immediately on a return visit, before the first paint.
+   try { if (sessionStorage.getItem('tdusa-welcome-seen') === '1') document.documentElement.classList.add('tdusa-intro-seen'); } catch (_) {}
+   try { if (document.referrer && new URL(document.referrer).origin === location.origin) document.documentElement.classList.add('tdusa-intro-seen'); } catch (_) {}
+  </script>
+  <style>
+   html.tdusa-intro-seen .welcome-preloader{display:none!important}
+   /* Fail-safe: the intro cannot block the site indefinitely, even without JavaScript. */
+   .welcome-preloader{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;background:#06122c;color:#fff;animation:welcome-failsafe 8s forwards}
+   @keyframes welcome-failsafe{0%,94%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden}}
+  </style>
+  <script src="preloader.js?v=4" defer></script>
+  <link href="styles.css?v=26" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="welcome-preloader" id="welcome-preloader" role="dialog" aria-modal="true" aria-labelledby="welcome-label" aria-describedby="welcome-accessible">
+   <div class="welcome-content">
+    <div class="welcome-logo-wrap"><span class="welcome-ring welcome-ring-outer" aria-hidden="true"></span><span class="welcome-ring welcome-ring-inner" aria-hidden="true"></span><img src="public/tdusa-preloader.webp" alt="TDUSA union logo" class="welcome-logo" fetchpriority="high"/></div>
+    <p id="welcome-label" class="welcome-label">TDUSA</p>
+    <p class="welcome-union">Trincomalee District University Students Association</p>
+    <p class="welcome-caption"><span id="welcome-typed" aria-hidden="true"><span id="welcome-first">United by Education.</span><span id="welcome-space"> </span><em id="welcome-second">Driven by Excellence.</em></span><span class="welcome-cursor" aria-hidden="true"></span></p>
+    <span id="welcome-accessible" class="welcome-sr-only">United by Education. Driven by Excellence.</span>
+    <div class="welcome-progress" aria-hidden="true"><span></span></div>
+   </div>
+   <button type="button" id="welcome-skip" class="welcome-skip">Skip intro</button>
+  </div>
+  <header class="site-header" id="top">
+   <a class="brand" href="#top">
+    <span>
+     <img src="tdusa.png" style="height: 30px; width: 30px;" fetchpriority="high" decoding="async" alt="TDUSA logo"/>
+    </span>
+    <i>
+     <b>
+      TDUSA
+     </b>
+     Studies Determine Future
+    </i>
+   </a>
+   <nav>
+    <a href="#about">
+     About
+    </a>
+    <a href="#impact">
+     Impact
+    </a>
+    <a href="#events">
+     Events
+    </a>
+    <a href="#projects">
+     Projects
+    </a>
+    <a href="#gallery">
+     Gallery
+    </a>
+    <a href="#team">
+     Team
+    </a>
+   </nav>
+   <a class="header-action" href="#contact">
+    Get involved ↗
+   </a>
+   <button aria-expanded="false" class="menu-button" type="button">
+    Menu
+   </button>
+  </header>
+  <main>
+   <section class="hero">
+    <div class="grid-overlay">
+    </div>
+    <p class="eyebrow">
+     Trincomalee / Sri Lanka
+     <span>
+     </span>
+     Est. 1994
+    </p>
+    <div class="hero-copy">
+     <p class="kicker">
+      32 years of shared possibility
+     </p>
+     <h1>
+      The future is
+      <br/>
+      <em>
+       already in motion.
+      </em>
+     </h1>
+     <p class="hero-description">
+      Trincomalee District University Students Association is a student-led movement uplifting educational and social standards across our district.
+     </p>
+     <div class="hero-actions">
+      <a class="button button-light" href="#about">
+       Discover our story ↓
+      </a>
+      <a class='button button-results' href='results-test.html'>
+       View TDUSA Pilot Results
+       <span>
+        →
+       </span>
+      </a>
+     </div>
+    </div>
+    <div class="hero-foot">
+     <div>
+      <b class="count" data-target="32" data-suffix="+">0+</b>
+      <span>
+       Years of service
+      </span>
+     </div>
+     <div>
+      <b class="count" data-target="30000" data-suffix="+">0+</b>
+      <span>
+       Donations
+      </span>
+     </div>
+     <div>
+      <b class="count" data-target="10" data-suffix="+">0+</b>
+      <span>
+       Annual events
+      </span>
+     </div>
+    </div>
+   </section>
+   <section class="portal-sequence" id="portal">
+    <div class="sequence-sticky">
+     <img alt="A student approaching a luminous portal" id="portal-frame" src="public/portal-frames/optimized/frame_000_delay-0.055s.jpg"/>
+     <div class="sequence-shade">
+     </div>
+     <div class="sequence-caption">
+      <p class="eyebrow">
+       A path forward
+      </p>
+      <h2>
+       Opportunity begins
+       <br/>
+       with
+       <em>
+        one step.
+       </em>
+      </h2>
+      <p>
+       Scroll to follow the journey.
+      </p>
+     </div>
+     <output id="frame-counter">
+      01 / 182
+     </output>
+    </div>
+   </section>
+   <section class="event-posters section-soft" id="event-posters" aria-labelledby="event-posters-heading">
+    <div class="event-posters-header"><div><div class="section-label"><span>TDUSA / EVENTS</span></div><h2 id="event-posters-heading">Moments <em>to share.</em></h2><p>Upcoming events and moments from past events.</p></div></div>
+    <div id="poster-status" class="poster-status" role="status">Loading event posters…</div>
+    <div class="poster-carousel" id="poster-carousel" role="region" aria-roledescription="carousel" aria-label="Event posters" hidden>
+     <div class="poster-stage-space"><div class="poster-viewport poster-stage" id="poster-viewport"><div class="poster-cards" id="poster-cards"></div></div></div>
+     <p id="poster-paused" class="poster-paused" hidden>Paused · tap the poster to resume</p>
+     <span id="poster-help" class="poster-sr-only">Tap, click, or press Enter or Space on the poster to pause or resume the slideshow.</span>
+    </div>
+   </section>
+   <section class="about section" id="about">
+    <div class="section-label">
+     01
+     <span>
+      Who we are
+     </span>
+    </div>
+    <div class="about-layout">
+     <h2>
+      University students,
+      <br/>
+      <em>
+       working for home.
+      </em>
+     </h2>
+     <div>
+      <p class="lead">
+       TDUSA is a non-profit public organisation run by enthusiastic university undergraduates of Trincomalee.
+      </p>
+      <p>
+       For more than three decades, we have created practical pathways for students through education, mentoring, community service and the belief that every young person deserves room to grow.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="impact section-dark" id="impact">
+    <div class="grid-overlay">
+    </div>
+    <div class="section-label">
+     02
+     <span>
+      Our impact
+     </span>
+    </div>
+    <div class="impact-head">
+     <h2>
+      A district moves
+      <br/>
+      <em>
+       when students do.
+      </em>
+     </h2>
+     <p>
+      Education, social service, environmental action and the mentorship that reaches beyond the classroom.
+     </p>
+    </div>
+    <div class="metrics">
+     <div>
+      <b>
+       32+
+      </b>
+      <span>
+       Years of service
+      </span>
+     </div>
+     <div>
+      <b>
+       30000+
+      </b>
+      <span>
+       Donations
+      </span>
+     </div>
+     <div>
+      <b>
+       10+
+      </b>
+      <span>
+       Annual events
+      </span>
+     </div>
+     <div>
+      <b>
+       100%
+      </b>
+      <span>
+       Student-led
+      </span>
+     </div>
+    </div>
+   </section>
+   <section class="events section" id="events">
+    <div class="section-heading">
+     <div class="section-label">
+      03
+      <span>
+       Events
+      </span>
+     </div>
+     <h2>
+      Serving the community,
+      <br/>
+      <em>
+       one step at a time.
+      </em>
+     </h2>
+     <p>
+      From blood donation drives to flood relief, beach cleanups to environmental awareness — every TDUSA event is an act of care for Trincomalee and its people.
+     </p>
+    </div>
+    <div class="event-grid">
+
+     <!-- Card 1 — large hero card -->
+     <article class="event-card large">
+      <img alt="TDUSA Blood Camp 2020" src="public/gallery/blood_Donation.webp" loading="lazy" decoding="async"/>
+      <div>
+       <span>Health &amp; Social Service</span>
+      <!--<h3>TDUSA Blood Camp 2020 — giving life, one drop at a time.</h3>-->
+      </div>
+     </article>
+
+     <!-- Card 2 -->
+     <article class="event-card">
+      <img alt="TDUSA Awareness Walk and Beach Cleanup" src="public/gallery/cleanup.webp" loading="lazy" decoding="async"/>
+      <div>
+       <span>Environment &amp; Awareness</span>
+       <!--<h3>Awareness Walk &amp; Beach Cleanup — protecting our shores.</h3>-->
+      </div>
+     </article>
+
+     <!-- Card 3 -->
+     <article class="event-card">
+      <img alt="TDUSA Flood Relief — Vattavan" src="public/gallery/Floot_relief.webp" loading="lazy" decoding="async"/>
+      <div>
+       <span>Disaster Relief</span>
+       <!--<h3>Flood Relief, Vattavan — standing with those who need us most.</h3>-->
+      </div>
+     </article>
+
+     <!-- Card 4 -->
+     <article class="event-card">
+      <img alt="TDUSA Pasarai Kaan 2.0 — No Plastic" src="public/gallery/zeroplastic.webp" loading="lazy" decoding="async"/>
+      <div>
+       <span>Environmental Action</span>
+      <!-- <h3>Pasarai Kaan 2.0 — no plastic, everything is fantastic.</h3> -->
+      </div>
+     </article>
+
+    </div>
+    <div id="managed-events" class="managed-updates" hidden><div class="managed-updates-heading"><p class="managed-kicker">TDUSA / EVENTS</p><h3>Event <em>updates.</em></h3></div><div id="managed-event-list" class="managed-update-grid"></div></div>
+   </section>
+   <section class="announcements section-soft" id="announcements" aria-labelledby="announcements-heading" hidden><div class="section-label">TDUSA <span>Announcements</span></div><div class="section-heading"><h2 id="announcements-heading">News worth <em>sharing.</em></h2><p>Latest announcements from the TDUSA community.</p></div><div id="announcement-list" class="managed-update-grid"></div></section>
+   <section class="projects section-soft" id="projects">
+    <div class="section-label">
+     04
+     <span>
+      Projects
+     </span>
+    </div>
+    <div class="projects-layout">
+     <div>
+      <h2>
+       Service that
+       <br/>
+       <em>
+        keeps giving.
+       </em>
+      </h2>
+      <p>
+       Initiatives shaped around the needs of our students, their families and their communities.
+      </p>
+     </div>
+     <div class="project-list">
+      <article>
+       <span>
+        01
+       </span>
+       <div>
+        <h3>
+         Educational support
+        </h3>
+        <p>
+         Guidance and learning opportunities for O/L and A/L students.
+        </p>
+       </div>
+       <i>
+        ↗
+       </i>
+      </article>
+      <article>
+       <span>
+        02
+       </span>
+       <div>
+        <h3>
+         Social initiatives
+        </h3>
+        <p>
+         Community programmes that meet people where they are.
+        </p>
+       </div>
+       <i>
+        ↗
+       </i>
+      </article>
+      <article>
+       <span>
+        03
+       </span>
+       <div>
+        <h3>
+         Environmental action
+        </h3>
+        <p>
+         Student-powered care for the place we call home.
+        </p>
+       </div>
+       <i>
+        ↗
+       </i>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="gallery section" id="gallery">
+    <div class="section-heading">
+     <div class="section-label">
+      05
+      <span>
+       Gallery
+      </span>
+     </div>
+     <h2>
+      The work. The people.
+      <br/>
+      The
+      <em>
+       memory.
+      </em>
+     </h2>
+     <p>
+      A place for the moments that define our shared journey.
+     </p>
+    </div>
+    <div class="gallery-grid gallery-grid-twelve">
+
+     <!-- 01 — Pongal (TDUSA image, comes first) -->
+     <figure class="gallery-item">
+      <img alt="TDUSA Pongal Vizha 2025" src="public/gallery/pongal-2025.webp" loading="lazy" decoding="async"/>
+      <figcaption>01 / Pongal Vizha</figcaption>
+     </figure>
+
+     <!-- 02 — Kurunagai Ula (comes second) -->
+     <figure class="gallery-item">
+      <img alt="TDUSA Kurunagai Ula 2024" src="public/gallery/kurunagai-ula-2024.webp" loading="lazy" decoding="async"/>
+      <figcaption>02 / Kurunagai Ula</figcaption>
+     </figure>
+
+     <!-- 03 — Thanneer Panthal 2025 -->
+     <figure class="gallery-item">
+      <img alt="TDUSA Thanneer Panthal 2025" src="public/gallery/thanneer-panthal-2025.webp" loading="lazy" decoding="async"/>
+      <figcaption>03 / Thanneer Panthal</figcaption>
+     </figure>
+
+     <!-- 04 — Prize Giving 2025 -->
+     <figure class="gallery-item">
+      <img alt="TDUSA Prize Giving Coliseum 2025" src="public/gallery/prize-giving-2025.webp" loading="lazy" decoding="async"/>
+      <figcaption>04 / Coliseum</figcaption>
+     </figure>
+
+     <!-- 05 — Cricket Fiesta 2025 -->
+     <figure class="gallery-item">
+      <img alt="TDUSA Cricket Fiesta 2025" src="public/gallery/cricket-fiesta-2025.webp" loading="lazy" decoding="async"/>
+      <figcaption>05 / Cricket Fiesta</figcaption>
+     </figure>
+
+     <!-- 06 — Pasarai Kaan 2.0 -->
+     <figure class="gallery-item">
+      <img alt="TDUSA Pasarai Kaan 2.0 — 2022" src="public/gallery/pasarai-kaan-2022.webp" loading="lazy" decoding="async"/>
+      <figcaption>06 / Pasumai Kaan</figcaption>
+     </figure>
+
+     <!-- 07 — Car Wash 2022 -->
+     <figure class="gallery-item">
+      <img alt="TDUSA Annual Car Wash 2022" src="public/gallery/car-wash-2022.webp" loading="lazy" decoding="async"/>
+      <figcaption>07 / Car Wash</figcaption>
+     </figure>
+
+     <!-- 08 — Vizhtheru 2023 -->
+     <figure class="gallery-item">
+      <img alt="TDUSA Vizhtheru Teaching Programme 2023" src="public/gallery/vizhtheru-2023.webp" loading="lazy" decoding="async"/>
+      <figcaption>08 / Vizhthiru</figcaption>
+     </figure>
+
+     <!-- 09 — Do You Know Quiz 2025 -->
+     <figure class="gallery-item">
+      <img alt="TDUSA Do You Know Quiz Grand Finale 2025" src="public/gallery/quiz-2025.webp" loading="lazy" decoding="async"/>
+      <figcaption>09 / Quiz Grand Finale</figcaption>
+     </figure>
+
+     <!-- 10 — Annual Get Together 2024 -->
+     <figure class="gallery-item">
+      <img alt="TDUSA Annual Get Together 2024" src="public/gallery/get-together-2024.webp" loading="lazy" decoding="async"/>
+      <figcaption>10 / Get Together</figcaption>
+     </figure>
+
+     <!-- 11 — Annual Exam 2024 -->
+     <figure class="gallery-item">
+      <img alt="TDUSA Annual Exam 2024" src="public/gallery/annual-exam-2024.webp"loading="lazy" decoding="async"/>
+      <figcaption>11 / Annual Exam</figcaption>
+     </figure>
+
+     <!-- 12 — reserve slot: drop your next image into public/gallery/ and update src -->
+     <figure class="gallery-item gallery-placeholder">
+       <img alt="TDUSA Annual Exam 2024" src="public/gallery/first.webp" loading="lazy" decoding="async"/>
+      <figcaption>12 / First Form Seminar</figcaption>
+     </figure>
+
+    </div>
+   </section>
+   <section class="team section-dark" id="team">
+    <div class="grid-overlay">
+    </div>
+    <div class="section-label">
+     06
+     <span>
+      2026 executive committee
+     </span>
+    </div>
+    <div class="team-layout">
+     <h2>
+      Made of
+      <br/>
+      <em>
+       many hands.
+      </em>
+     </h2>
+     <p>
+      Meet the 2026 TDUSA Executive Committee: students chosen to serve Trincomalee with purpose, leadership and shared responsibility.
+     </p>
+    </div>
+    <div class="committee-intro">
+     <span>
+      TDUSA / 2026
+     </span>
+     <p>
+       meet each member.
+     </p>
+    </div>
+    <div class="committee-grid">
+     <article class="member-card">
+      <div class="member-photo">
+       <img alt="J. Ratheeshan, President" loading="lazy" decoding="async" src="public/committee-2026/Rathee.webp"/>
+      </div>
+      <div class="member-info">
+       <span>
+        01 / Leadership
+       </span>
+       <h3>
+        J. Ratheeshan
+       </h3>
+       <p>
+        President
+       </p>
+       <b>
+        UOP
+       </b>
+      </div>
+     </article>
+     <article class="member-card">
+      <div class="member-photo">
+       <img alt="R. Nipunraj, Vice President" loading="lazy" decoding="async" src="public/committee-2026/Nipun.webp"/>
+      </div>
+      <div class="member-info">
+       <span>
+        02 / Leadership
+       </span>
+       <h3>
+        R. Nipunraj
+       </h3>
+       <p>
+        Vice President
+       </p>
+       <b>
+        EUSL
+       </b>
+      </div>
+     </article>
+     <article class="member-card">
+      <div class="member-photo">
+       <img alt="V. Abishake, Treasurer" loading="lazy" decoding="async" src="public/committee-2026/abi.webp"/>
+      </div>
+      <div class="member-info">
+       <span>
+        03 / Finance
+       </span>
+       <h3>
+        V. Abishake
+       </h3>
+       <p>
+        Treasurer
+       </p>
+       <b>
+        UOJ
+       </b>
+      </div>
+     </article>
+     <article class="member-card">
+      <div class="member-photo">
+       <img alt="R. Shathurshmah, Secretary" loading="lazy" decoding="async" src="public/committee-2026/Sathurshmah.webp"/>
+      </div>
+      <div class="member-info">
+       <span>
+        04 / Secretariat
+       </span>
+       <h3>
+        R. Shathurshmah
+       </h3>
+       <p>
+        Secretary
+       </p>
+       <b>
+        UOJ
+       </b>
+      </div>
+     </article>
+     <article class="member-card">
+      <div class="member-photo">
+       <img alt="T. Sathusan, Joint Secretary" loading="lazy" decoding="async" src="public/committee-2026/sathu2.webp"/>
+      </div>
+      <div class="member-info">
+       <span>
+        05 / Secretariat
+       </span>
+       <h3>
+        T. Sathusan
+       </h3>
+       <p>
+        Joint Secretary
+       </p>
+       <b>
+        UOV
+       </b>
+      </div>
+     </article>
+     <article class="member-card">
+      <div class="member-photo">
+       <img alt="S. Haranee, Editor" loading="lazy" decoding="async" src="public/committee-2026/Harni.webp"/>
+      </div>
+      <div class="member-info">
+       <span>
+        06 / Editorial
+       </span>
+       <h3>
+        S. Haranee
+       </h3>
+       <p>
+        Editor
+       </p>
+       <b>
+        UOJ
+       </b>
+      </div>
+     </article>
+     <article class="member-card">
+      <div class="member-photo">
+       <img alt="S. Ramsaran, Editor" loading="lazy" decoding="async" src="public/committee-2026/raam.webp"/>
+      </div>
+      <div class="member-info">
+       <span>
+        07 / Editorial
+       </span>
+       <h3>
+        S. Ramsaran
+       </h3>
+       <p>
+        Editor
+       </p>
+       <b>
+        UOJ
+       </b>
+      </div>
+     </article>
+     <article class="member-card">
+      <div class="member-photo">
+       <img alt="R. Rishivan, Member" loading="lazy" decoding="async" src="public/committee-2026/rishivan.webp"/>
+      </div>
+      <div class="member-info">
+       <span>
+        08 / Committee
+       </span>
+       <h3>
+        R. Rishivan
+       </h3>
+       <p>
+        Member
+       </p>
+       <b>
+        UOP
+       </b>
+      </div>
+     </article>
+     <article class="member-card">
+      <div class="member-photo">
+       <img alt="S. Shakeeban, Member" loading="lazy" decoding="async" src="public/committee-2026/Shakee.webp"/>
+      </div>
+      <div class="member-info">
+       <span>
+        09 / Committee
+       </span>
+       <h3>
+        S. Shakeeban
+       </h3>
+       <p>
+        Member
+       </p>
+       <b>
+        UOV
+       </b>
+      </div>
+     </article>
+     <article class="member-card">
+      <div class="member-photo">
+       <img alt="J. Sanjai, Member" loading="lazy" decoding="async" src="public/committee-2026/Sanjai.webp"/>
+      </div>
+      <div class="member-info">
+       <span>
+        10 / Committee
+       </span>
+       <h3>
+        J. Sanjai
+       </h3>
+       <p>
+        Member
+       </p>
+       <b>
+        UOJ
+       </b>
+      </div>
+     </article>
+     <article class="member-card">
+      <div class="member-photo">
+       <img alt="C. Darshan, Member" loading="lazy" decoding="async" src="public/committee-2026/Darshan.webp"/>
+      </div>
+      <div class="member-info">
+       <span>
+        11 / Committee
+       </span>
+       <h3>
+        C. Darshan
+       </h3>
+       <p>
+        Member
+       </p>
+       <b>
+        UOP
+       </b>
+      </div>
+     </article>
+     <article class="member-card">
+      <div class="member-photo">
+       <img alt="M. Monika, Member" loading="lazy" decoding="async" src="public/committee-2026/Monika.webp"/>
+      </div>
+      <div class="member-info">
+       <span>
+        12 / Committee
+       </span>
+       <h3>
+        M. Monika
+       </h3>
+       <p>
+        Member
+       </p>
+       <b>
+        USJP
+       </b>
+      </div>
+     </article>
+     <article class="member-card">
+      <div class="member-photo">
+       <img alt="R. Soorya, Mutur West" loading="lazy" decoding="async" src="public/committee-2026/soorya.webp"/>
+      </div>
+      <div class="member-info">
+       <span>
+        13 / Regional
+       </span>
+       <h3>
+        R. Soorya
+       </h3>
+       <p>
+        Mutur West
+       </p>
+       <b>
+        UOJ
+       </b>
+      </div>
+     </article>
+     <article class="member-card">
+      <div class="member-photo">
+       <img alt="M. Abhivarun, Member" loading="lazy" decoding="async" src="public/committee-2026/abivarun.webp"/>
+      </div>
+      <div class="member-info">
+       <span>
+        14 / Regional
+       </span>
+       <h3>
+        M. Abhivarun
+       </h3>
+       <p>
+        Mutur East
+       </p>
+       <b>
+        UOJ
+       </b>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section class="contact" id="contact">
+    <div class="contact-copy">
+     <p class="eyebrow">
+      Get involved
+     </p>
+     <h2>
+      Be part of the movement shaping Trincomalee's future.
+     </h2>
+     <p>
+      Whether you want to volunteer, donate or partner with us, we would love to hear from you.
+     </p>
+     <a href="mailto:tdusasl@gmail.com">
+      tdusasl@gmail.com ↗
+     </a>
+     <span>
+      Town Hall Premises, Dockyard Road,
+      <br/>
+      Trincomalee, Sri Lanka
+     </span>
+    </div>
+    <form>
+     <label>
+      Your name
+      <input name="name" required="" type="text"/>
+     </label>
+     <label>
+      Email address
+      <input name="email" required="" type="email"/>
+     </label>
+     <label>
+      How can we work together?
+      <textarea name="message" required="" rows="4"></textarea>
+     </label>
+     <button class="button button-light" type="submit">
+      Send message ↗
+     </button>
+    </form>
+   </section>
+  </main>
+  <footer><a class="brand" href="#top"><span><img src="tdusa.png" alt="TDUSA logo" fetchpriority="high" decoding="async"></span><i><b>TDUSA</b>Studies Determine Future</i></a><p>&copy; <span id="year"></span> Trincomalee District University Students Association</p><a href="admin/login.html">Admin login</a><a href="#top">Back to top &uarr;</a></footer>
+  <aside class="tdusa-chat" id="tdusa-chat-root" aria-label="TDUSA virtual assistant"><button class="tdusa-chat-launch" id="tdusa-chat-launch" type="button" aria-expanded="false" aria-controls="tdusa-chat-panel"><span aria-hidden="true">✦</span> Ask TDUSA</button></aside>
+  <script src="supabase-config.js" defer></script>
+  <script src="assistant-widget.js?v=3" defer></script>
+  <script src="gallery-test.js?v=1" defer></script>
+  <script src="event-posters-test.js?v=9" defer></script>
+  <script src="committee-test.js?v=4" defer></script>
+  <script src="updates-test.js?v=6" defer></script>
+  <script src="app.js?v=2" defer>
+  </script>
+ </body>
+</html>
